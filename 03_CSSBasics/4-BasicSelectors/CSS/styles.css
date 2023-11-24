@@ -1,0 +1,20 @@
+/* type selector */
+body {
+    margin: 10px;
+}
+
+
+/* id selector */
+#products {
+
+}
+
+/* class selector */
+.product {
+
+}
+
+/* attribute selector */
+a[href^="http"][href*=".com"] {
+
+}

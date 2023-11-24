@@ -1,0 +1,15 @@
+body {
+    margin: 10px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: orange;
+    box-shadow: 0 0 30px grey;
+}
+
+h1 {
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* for text shadow, instead of passing a explicit color like grey, use a semi transparent black, like rgba(0,0,0,0.2), can hava great blending effect with the background */
+}

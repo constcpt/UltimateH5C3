@@ -1,0 +1,24 @@
+body {
+    margin: 10px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    /* background-color: rgba(37, 139, 153, .5); */
+    background: linear-gradient(45deg, dodgerblue, yellow, tomato);
+}
+
+.box2 {
+    width: 600px;
+    height: 200px;
+    background: radial-gradient(circle at top left ,white, yellow);
+}
+
+.box3 {
+    width: 600px;
+    height: 200px;
+    background: rgb(215,25,200);
+    background: linear-gradient(49deg, rgba(215,25,200,1) 0%, rgba(249,255,0,1) 55%);
+}
+

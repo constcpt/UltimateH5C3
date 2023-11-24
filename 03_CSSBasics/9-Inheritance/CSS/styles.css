@@ -1,0 +1,15 @@
+body {
+    margin: 10px;
+}
+
+p {
+    color: dodgerblue;
+    border: 1px solid black;
+}
+
+/* if we dont want inherit value, setting the value of a property to initial  */
+/* if we want to enforce inheriting the value of a property, setting the value of a property to inherit  */
+strong {
+    color: initial;
+    border: inherit;
+}

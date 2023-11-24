@@ -1,0 +1,24 @@
+body {
+    margin: 10px;
+}
+
+p::first-letter {
+    font-size: 200%;
+    font-style: italic;
+    color: red;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+::selection {
+    background-color: pink;
+}
+
+/* useful pseudo element for inserting content before the content of an element  */
+p::after {
+    content: "...";
+    /* a block element starts on a new line and takes up the entire available space */
+    display: block; 
+}
