@@ -1,0 +1,39 @@
+body {
+  margin: 10px;
+  height: 200vh; /* 200% of the height of the viewport */
+}
+
+.boxes {
+  border: 3px solid lightgrey;
+  position: relative;
+}
+
+.box {
+  width: 5rem;
+  height: 5rem;
+}
+
+.box-one {
+  background-color: gold;
+  position: fixed;
+  top: 0;
+  left: 2rem;
+  right: 2rem;
+  width: auto; /* let the browser decide the width */
+  z-index: 1;
+}
+
+.box-two {
+  background-color: lightblue;
+  position: relative;
+  left: 4rem;
+  bottom: 4rem;
+  z-index: 2; /* by default the z-index property for all elements is 0 */
+}
+
+.box-three {
+  background-color: lightgreen;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

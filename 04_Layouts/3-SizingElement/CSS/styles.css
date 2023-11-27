@@ -1,0 +1,25 @@
+/* use universal selector to apply box-sizing to all elements, remember pesudo elements won't be selected by just *, so we need to use *::before and *::after */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.box::before {
+  content: "Hello";
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  padding: 20px;
+  border: 10px solid orange;
+  margin: 50px;
+}
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  display: inline-block;
+}

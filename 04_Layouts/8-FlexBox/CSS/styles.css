@@ -1,0 +1,77 @@
+body {
+  /* margin: 10px; */
+}
+
+.container {
+  border: 3px solid lightgrey;
+  display: flex;
+  flex-direction: row; /* define which is the main axis */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* wrap means that the items will go to the next line if there is no space */
+  align-content: center; /* align-content only applies when there are multiple lines (flex-wrap: wrap;) */
+  height: 30vh;
+}
+
+.box {
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
+  margin: 1rem;
+}
+
+.container-2 {
+  border: 3px solid lightgrey;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* gap: 2rem; */
+  height: 30vh;
+}
+
+.newbox {
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
+  margin: 1rem;
+}
+
+.newbox-1 {
+  align-self: flex-start; /* align-self property applies on a flex item, to override the align-items property we assign earlier on the flex container */
+}
+
+.container-3 {
+  border: 3px solid lightgrey;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.newnewbox {
+  /* flex-basis: 15rem; */ /* flex-basis define the width(flex-direction: row) or height(flex-direction: column) of the flex item, instead of using width or height */
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+  flex: 1 1 15rem; /* flex shorthand property, flex-grow, flex-shrink, flex-basis */
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
+  margin: 1rem;
+}
+
+.newnewbox-1 {
+  /* flex-grow: 2; */
+  /* flex-shrink: 0; */
+}
+
+.newnewbox-2 {
+  /* flex-grow: 1; */
+}
+
+.newnewbox-3 {
+  /* flex-grow: 1; */
+}

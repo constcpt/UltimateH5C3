@@ -1,0 +1,21 @@
+.container {
+  display: grid;
+  /* 3 x 2 */
+  /* grid-template-rows: 100px 100px 100px; */ /* each row should be 100px tall */
+  /* grid-template-columns: repeat(2, 200px); */ /* each column should be 200px wide */
+  /* use repeat function to avoid duplication */
+  /* grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(
+    2,
+    200px
+  );  */
+  /* use  shorthand to avoid duplication */
+  grid-template: repeat(3, 100px) / repeat(2, 100px);
+  border: 3px solid lightgrey;
+}
+
+.box {
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
+}
