@@ -1,0 +1,48 @@
+/*  for build website mobile first, set the flex direction to column. And we use media queries to see if the screen is wider than 500px, then we are going to set flex direction to row. So these boxes will apprear next to each other. */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  background-color: gold;
+  padding: 1rem;
+}
+
+/* target the second occurence of an element with a class of box */
+.box:nth-of-type(2) {
+  background-color: dodgerblue;
+}
+
+/* if the screen is between 600 to 900px, these styles will be applied */
+/* @media screen and (min-width: 600px) and (max-width: 900px) {
+  .container {
+    flex-direction: row;
+  }
+} */
+/* The condition we define here really depends on our design and how it should look across different devices */
+
+@media screen and (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    flex-direction: row;
+  }
+  .box {
+    background-color: white;
+  }
+}
+
+/* When printing pages, we should use pt for font size and cm/inches for paddings and margins. */
+@media print {
+  body {
+    font-size: 12pt;
+  }
+  .box {
+    padding: 0.5cm;
+  }
+}

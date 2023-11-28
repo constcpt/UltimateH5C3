@@ -12,10 +12,28 @@
   /* use  shorthand to avoid duplication */
   grid-template: repeat(3, 100px) / repeat(2, 100px);
   border: 3px solid lightgrey;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  height: 50vh;
 }
 
 .box {
   width: 5rem;
   height: 5rem;
+  background-color: gold;
+}
+
+.container2 {
+  margin-top: 1rem;
+  border: 3px solid lightgrey;
+  display: grid;
+  grid-template: repeat(3, 100px) / repeat(2, 100px);
+  /* justify-items: stretch; */ /* default */
+  /* align-items: stretch; */ /* default */
+}
+
+.box2 {
   background-color: gold;
 }

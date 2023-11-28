@@ -1,0 +1,6 @@
+.first {
+  /* display: none; */
+  visibility: hidden;
+
+  /* the difference between display: none and visibility: hidden is that the first one removes the element from the DOM, as if it didn't exist, while the second one only hides it, but it's still there */
+}

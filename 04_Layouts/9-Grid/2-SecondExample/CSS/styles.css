@@ -1,0 +1,18 @@
+.container {
+  display: grid;
+
+  grid-template: 100px auto 100px / 30fr 70fr; /* fr means fraction of the available space */
+  /* Best practice: prefer fr over % when setting sizes of rows and columns */
+  /* for 3 rows, the first row is 100px, the second row which is normally the container for the sidebar and the main content to grows and fill the entire space, so we use auto keyword, and for the third row which is normally the footer, we set it to 100px */
+
+  /* row-gap: 10px;
+  column-gap: 10px; */
+  gap: 10px; /* shorthand for row-gap and column-gap */
+
+  border: 3px solid lightgrey;
+  height: 100vh;
+}
+
+.box {
+  background-color: gold;
+}
