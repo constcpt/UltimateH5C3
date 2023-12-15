@@ -26,7 +26,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   /* gap: 2rem; */
   height: 30vh;
 }
@@ -53,7 +53,7 @@ body {
 }
 
 .newnewbox {
-  /* flex-basis: 15rem; */ /* flex-basis define the width(flex-direction: row) or height(flex-direction: column) of the flex item, instead of using width or height */
+  /* flex-basis: 15rem; */ /* flex-basis define/override the width(flex-direction: row) or height(flex-direction: column) of the flex item, instead of using width or height */
   /* flex-grow: 1; */
   /* flex-shrink: 1; */
   flex: 1 1 15rem; /* flex shorthand property, flex-grow, flex-shrink, flex-basis */
